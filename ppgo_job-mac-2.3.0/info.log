@@ -1,0 +1,30 @@
+root:@tcp(127.0.0.1:3306)/ppgo_job2?charset=utf8
+[ORM]2019/03/14 14:34:47 register db Ping `default`, this authentication plugin is not supported
+must have one register DataBase alias named `default`
+root:@tcp(127.0.0.1:3306)/ppgo_job2?charset=utf8
+[ORM]2019/03/14 14:34:51 register db Ping `default`, this authentication plugin is not supported
+must have one register DataBase alias named `default`
+root:@tcp(127.0.0.1:3306)/ppgo_job2?charset=utf8
+[ORM]2019/03/14 14:36:54 register db Ping `default`, this authentication plugin is not supported
+must have one register DataBase alias named `default`
+root:@tcp(127.0.0.1:3306)/ppgo_job2?charset=utf8
+[ORM]2019/03/14 14:36:56 register db Ping `default`, this authentication plugin is not supported
+must have one register DataBase alias named `default`
+root:@tcp(127.0.0.1:3306)/ppgo_job2?charset=utf8
+[ORM]2019/03/14 14:36:58 register db Ping `default`, this authentication plugin is not supported
+must have one register DataBase alias named `default`
+root:@tcp(127.0.0.1:3306)/ppgo_job2?charset=utf8
+[ORM]2019/03/14 14:38:05 register db Ping `default`, this authentication plugin is not supported
+must have one register DataBase alias named `default`
+root:@tcp(127.0.0.1:3306)/ppgo_job2?charset=utf8
+[ORM]2019/03/14 14:40:01 register db Ping `default`, this authentication plugin is not supported
+must have one register DataBase alias named `default`
+root:@tcp(127.0.0.1:3306)/ppgo_job2?charset=utf8
+[ORM]2019/03/14 14:44:03 register db Ping `default`, this authentication plugin is not supported
+must have one register DataBase alias named `default`
+root:@tcp(localhost:3306)/ppgo_job2?charset=utf8
+[ORM]2019/03/14 14:45:24 register db Ping `default`, this authentication plugin is not supported
+must have one register DataBase alias named `default`
+root:@tcp(172.18.70.126:3306)/ppgo_job2?charset=utf8
+[ORM]2019/03/14 14:51:19 register db Ping `default`, dial tcp 172.18.70.126:3306: getsockopt: connection refused
+must have one register DataBase alias named `default`
