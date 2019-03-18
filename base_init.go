@@ -2,10 +2,11 @@ package main
 
 import "fmt"
 
-var(
+var (
 	name = "mengyuan"
-	age = 12
+	age  = 12
 )
+
 //变量的定义
 //只定义 不赋值
 func variableZeroValue() {
@@ -44,5 +45,3 @@ func main() {
 	fmt.Println(name, age)
 
 }
-
-
