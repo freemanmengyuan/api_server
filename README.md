@@ -6,3 +6,5 @@
 5. if-else
 6. switch
 7. for 循环
+8. 函数
+9. 指针
