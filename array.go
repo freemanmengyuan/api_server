@@ -4,6 +4,7 @@ import "fmt"
 
 func arrayInit() {
 	var arr1 [5]int
+	fmt.Println(arr1)
 	arr2 := [5]int{1, 2, 3, 4, 5}
 	arr3 := [...]int{1, 3, 5}
 	var arr4 [4][5]int
@@ -11,6 +12,8 @@ func arrayInit() {
 	fmt.Println(arr2)
 	fmt.Println(arr3)
 	fmt.Println(arr4)
+	var arr5 = [3]int{1, 2, 3}
+	fmt.Println(arr5)
 }
 
 func arrayPrint() {
@@ -28,7 +31,7 @@ func arrayPrint() {
 	}
 }
 
-func arrayPrintTest(arr [5]int) {
+func arrayPrintTest(arr [5]int) { //传参类型必须一致
 
 	for i, v := range arr {
 		fmt.Println(i, v)
