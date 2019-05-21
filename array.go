@@ -3,9 +3,14 @@ package main
 import "fmt"
 
 func arrayInit() {
-	var arr1 [5]int
+	// 完整的定义方式
+	var arr0 [5]int
+	var arr1 = [6]int{1, 3, 5, 7, 9, 0}
+	fmt.Println(arr0)
 	fmt.Println(arr1)
+	// 短格式
 	arr2 := [5]int{1, 2, 3, 4, 5}
+	// 定义slice
 	arr3 := [...]int{1, 3, 5}
 	var arr4 [4][5]int
 	fmt.Println(arr1)
@@ -50,15 +55,19 @@ func arrayPrintPoint(arr *[5]int) {
 func main() {
 	fmt.Println("hello")
 	//初始化
-	arrayInit()
+	//arrayInit()
 	//遍历
 	//arrayPrint()
 	//数组是值类型 作为函数参数 是复制
-	arr2 := [5]int{1, 2, 3, 4, 5}
-	arrayPrintTest(arr2)
-	fmt.Println(arr2)
+	//arr2 := [5]int{1, 2, 3, 4, 5}
+	//arrayPrintTest(arr2)
+	//fmt.Println(arr2)
 
 	//使用指针 更改数组值
-	arrayPrintPoint(&arr2)
-	fmt.Println(arr2)
+	//arrayPrintPoint(&arr2)
+	//fmt.Println(arr2)
+	var a int = 2
+	p := &a
+	*p = 3
+	fmt.Println(a, *p)
 }

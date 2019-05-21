@@ -64,11 +64,11 @@ func delMapValue() {
 
 func main() {
 	//初始化map
-	//initMap()
+	initMap()
 	//遍历map
 	//foreachMap()
 	//获取元素
-	getMapValue()
+	//getMapValue()
 	//删除操作
-	delMapValue()
+	//delMapValue()
 }
