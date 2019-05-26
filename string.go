@@ -24,11 +24,15 @@ func main() {
 	for i, ch := range []rune(s) {
 		fmt.Printf("(%d  %c)", i, ch)
 	}
-	fmt.Println()
+	fmt.Println(34334)
 
 	//获取字符串的字数
 	count := len([]rune(s))
 	println(count)
 
 	fmt.Println(utf8.DecodeLastRuneInString(s))
+
+	fmt.Println("hrllll")
+	fmt.Println(s)
+
 }
