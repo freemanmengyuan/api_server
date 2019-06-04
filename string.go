@@ -27,8 +27,8 @@ func main() {
 	fmt.Println(34334)
 
 	//获取字符串的字数
-	count := len([]rune(s))
-	println(count)
+	//count := len([]rune(s))
+	//println(count)
 
 	fmt.Println(utf8.DecodeLastRuneInString(s))
 

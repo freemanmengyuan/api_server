@@ -21,7 +21,7 @@ func foreachMap() {
 		"age":  "16",
 		"sex":  "1",
 	}
-	println("*****遍历*****")
+	fmt.Println("*****遍历*****")
 	for k,v := range(m) {
 		println(k, v)
 	}
