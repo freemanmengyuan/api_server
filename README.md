@@ -3,11 +3,11 @@
     - helloworld.go
 ##### 基础语法
 2. 数据类型
-    - 
+    - base_type.go
 3. 变量
     - base_init.go
 4. 常量、枚举
-    - base_type.go
+    - base_const.go
 5. if-else
 6. switch
 7. for 循环

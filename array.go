@@ -53,7 +53,6 @@ func arrayPrintPoint(arr *[5]int) {
 }
 
 func main() {
-	fmt.Println("hello")
 	//初始化
 	//arrayInit()
 	//遍历
