@@ -13,17 +13,6 @@ type Retriever struct {
 }
 
 func (r Retriever) Get(url string) string {
-	//req := HttpRequest.NewRequest()
-	/*resp, err := http.Get(url)
-	if err != nil {
-		panic(err)
-	}
-	result, err := httputil.DumpRequest(resp, true)
-
-	//resp.Body.Close()
-	if err != nil {
-		panic(err)
-	}*/
 
 	resp, err := http.Get("http://www.baidu.com")
 	if err != nil {

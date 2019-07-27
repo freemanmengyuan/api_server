@@ -2,8 +2,10 @@ package main
 
 import (
 	"fmt"
-	"go/retirever/real"
+	"learn/retirever/mock"
+	"learn/retirever/real"
 )
+
 //定义接口
 type Retriever interface {
 	Get(url string) string
@@ -15,10 +17,9 @@ func download(r Retriever) string {
 }
 func main() {
 	//var r Retriever
-	//r = mock.Retriever{"this is fake imooc"}
-	//fmt.Println(download(r))
+	r := mock.Retriever{"this is fake imooc"}
+	fmt.Println(download(r))
 
 	fmt.Println(download(real.Retriever{}))
-
 
 }

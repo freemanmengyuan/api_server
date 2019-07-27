@@ -44,7 +44,7 @@ func (node treeNode) print() {  //和正常的写法没有区别
 //更改 改进 加判断nil
 func (node *treeNode)setValue(){
 	if node == nil {
-		fmt.Println("setting is error nil node")
+		fmt.Println("setting is error nil tree")
 		return
 	}
 	node.value = 0
@@ -67,7 +67,7 @@ func main() {
 	node := treeNode{3, createTreeNode(5), nil}
 	fmt.Println(node)
 	//值传递 引用传递
-	//node.print()
+	//tree.print()
 	node.left.print()
 	//更改 值传递||引用传递
 	node.setValue()
