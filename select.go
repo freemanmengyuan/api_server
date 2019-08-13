@@ -2,8 +2,6 @@ package main
 
 import (
 	"fmt"
-	"math/rand"
-	"time"
 )
 
 /*func main() {
@@ -20,7 +18,7 @@ import (
 		}
 	}
 }*/
-func generator() chan int {
+/*func generator() chan int {
 	out := make(chan int)
 	go func() {
 		i := 0
@@ -44,5 +42,42 @@ func main() {
 		case n := <-c2:
 			fmt.Printf("receive from c2 %d\n", n)
 		}
+	}
+}*/
+//main本身也是一个协程
+/*func main() {
+	ch := make(chan int)
+
+	go func(ch chan int) {
+		ch <- 1
+	}(ch)
+
+	//协程不会阻塞 直接向下执行到select
+	time.Sleep(time.Millisecond)
+
+	select {
+	case <-ch:
+		fmt.Println("hello")
+	default:
+		fmt.Println("default")
+	}
+}*/
+
+func main() {
+	ch := make(chan int)
+	//timeout := make(chan int)
+
+	go func(ch chan int) {
+		ch <- 1
+	}(ch)
+
+	//协程不会阻塞 直接向下执行到select
+	//time.Sleep(time.Millisecond)
+
+	select {
+	case <-ch:
+		fmt.Println("hello")
+	default:
+		fmt.Println("default")
 	}
 }
