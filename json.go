@@ -9,7 +9,6 @@ func main() {
 
 	//数组
 	x := []int{1, 2, 3, 4, 5}
-
 	s, err := json.Marshal(x)
 	if err != nil {
 		panic(err)
