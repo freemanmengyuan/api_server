@@ -13,14 +13,27 @@ func main() {
 	if err != nil {
 		panic(err)
 	}
-	smt, err := db.Prepare("insert into user_info set name=?, department=?, create_time=?")
+	//新增
+	/*smt, err := db.Prepare("insert into user_info set name=?, department=?, create_time=?")
 	if err != nil {
 		panic(err)
 	}
-	id, err := smt.Exec("zhangsan", "技术部", "2019-09-10")
+	res, err := smt.Exec("lisi", "技术部", "2019-09-20")
 	if err != nil {
 		panic(err)
 	}
+	id,err := res.LastInsertId()*/
+
+	//修改
+	smt, err := db.Prepare("update user_info set name=?  where id=?")
+	if err != nil {
+		panic(err)
+	}
+	res, err := smt.Exec("wangwu", 2)
+	if err != nil {
+		panic(err)
+	}
+	id,err := res.RowsAffected()
 
 	fmt.Print(id)
 }
