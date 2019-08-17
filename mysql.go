@@ -25,7 +25,7 @@ func main() {
 	id,err := res.LastInsertId()*/
 
 	//修改
-	smt, err := db.Prepare("update user_info set name=?  where id=?")
+	/*smt, err := db.Prepare("update user_info set name=?  where id=?")
 	if err != nil {
 		panic(err)
 	}
@@ -34,6 +34,21 @@ func main() {
 		panic(err)
 	}
 	id,err := res.RowsAffected()
-
 	fmt.Print(id)
+	*/
+
+	//查询
+	rows, err := db.Query(" select * from user_info ")
+	if err != nil {
+		panic(err)
+	}
+	for rows.Next() {
+		var id int
+		var name string
+		var department string
+		var create_time string
+		err = rows.Scan(&id, &name, &department, &create_time)
+		fmt.Println(id, name, department, create_time)
+	}
+
 }
