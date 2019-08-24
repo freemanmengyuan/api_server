@@ -53,7 +53,7 @@ func main() {
 		checkErr(err)
 
 		if numOfBytes != 0 {
-			fmt.Println("received server message", string(buffer[0:numOfBytes]))
+			fmt.Println("received friends message", string(buffer[0:numOfBytes]))
 		}
 	}
 
