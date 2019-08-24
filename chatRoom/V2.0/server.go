@@ -43,7 +43,7 @@ func processInfo(conn net.Conn) {
 
 }
 
-//消费队列
+//消费队列 从消息队列中取出消息
 func ConsumerMessage() {
 	for {
 		select {
