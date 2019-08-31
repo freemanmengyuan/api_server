@@ -25,4 +25,18 @@ func main() {
 	}
 	fmt.Printf("%s\n", s1)
 
+	//对象
+	type Student struct {
+		Name string
+		Age int
+	}
+	var student1 Student
+	student1.Name = "xiaohong"
+	student1.Age = 12
+	//student1 := Student{"xiaoming", 22}
+	s2, err := json.Marshal(student1)
+	if err != nil{
+		panic(err)
+	}
+	fmt.Print("json struct" + string(s2))
 }
