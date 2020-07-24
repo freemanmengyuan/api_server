@@ -10,8 +10,8 @@ func swapNew(a, b int) (int, int) {
 	a, b = b, a
 	return a, b
 }
-func main() {
 
+func PointDemo() {
 	// 指针的典型例子 间接的更改变量的值 是指针存在的根本意义
 	var a int = 2
 	var pa *int = &a

@@ -1,4 +1,4 @@
-package main
+package base
 
 import "fmt"
 
@@ -21,7 +21,7 @@ func arrayInit() {
 	fmt.Println(arr5)
 }
 
-func arrayPrint() {
+func arrayForeach() {
 	arr2 := [5]int{1, 2, 3, 4, 5}
 
 	for i := 0; i < len(arr2); i++ {
@@ -36,7 +36,14 @@ func arrayPrint() {
 	}
 }
 
-func arrayPrintTest(arr [5]int) { //传参类型必须一致
+func changearray(arr [5]int) { //传参类型必须一致
+	for i, v := range arr {
+		fmt.Println(i, v)
+	}
+	arr[2] = 100
+}
+
+func changeArrayByPoint(arr *[5]int) {
 
 	for i, v := range arr {
 		fmt.Println(i, v)
@@ -44,29 +51,14 @@ func arrayPrintTest(arr [5]int) { //传参类型必须一致
 	arr[2] = 100
 }
 
-func arrayPrintPoint(arr *[5]int) {
+func ArrayParamTest() {
 
-	for i, v := range arr {
-		fmt.Println(i, v)
-	}
-	arr[2] = 100
-}
-
-func main() {
-	//初始化
-	//arrayInit()
-	//遍历
-	//arrayPrint()
 	//数组是值类型 作为函数参数 是复制
-	//arr2 := [5]int{1, 2, 3, 4, 5}
-	//arrayPrintTest(arr2)
-	//fmt.Println(arr2)
+	arr2 := [5]int{1, 2, 3, 4, 5}
+	/*changearray(arr2)
+	fmt.Println(arr2)*/
 
 	//使用指针 更改数组值
-	//arrayPrintPoint(&arr2)
-	//fmt.Println(arr2)
-	var a int = 2
-	p := &a
-	*p = 3
-	fmt.Println(a, *p)
+	changeArrayByPoint(&arr2)
+	fmt.Println(arr2)
 }

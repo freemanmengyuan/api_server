@@ -1,7 +1,5 @@
 package base
 
-import "fmt"
-
 // 声明
 func calculateBill(num int, price int) int {
 	ret := num * price
@@ -29,12 +27,8 @@ func rectPropsName(length, width float64) (area float64, perimeter float64) {
 	return
 }
 
-func main() {
-
-	price, num := 4, 5                     //定义变量
-	ret := calculateBillSimple(num, price) //调用
-	fmt.Println(ret)
-	//空白符
-	var a, _ = rectPropsName(2, 4)
-	fmt.Printf("the area is %.2f \n", a)
+// defer
+func clear() {
+	println("清理一些系统资源。。。。。。")
 }
+

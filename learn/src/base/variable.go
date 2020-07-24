@@ -35,19 +35,3 @@ func variableShortValue() {
 	a, b, s := 3, 4, "hahah"
 	fmt.Println(a, b, s)
 }
-
-//第一个程序 helloworld
-func main() {
-	var(
-		b = 2
-		c = 2
-	)
-	fmt.Println(b, c)
-	fmt.Println("hello world1")
-	variableZeroValue()
-	//variableInitValue()
-	//variableSystemValue()
-	//variableShortValue()
-	//fmt.Println(name, age)
-
-}

@@ -120,12 +120,4 @@ func forDemo() {
 		fmt.Println("hello")
 	}
 }
-func main() {
-	// 分支
-	//ifDemo()
-	// switch
-	//switchDemo()
-	// for循环
-	forDemo()
 
-}
